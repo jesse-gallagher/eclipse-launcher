@@ -360,6 +360,7 @@ public class LaunchOptionsDialog extends TitleAreaDialog {
 	}
 
 	/**
+	 * @return if it is clean
 	 * @since 2.1
 	 */
 	public boolean isClean() {
@@ -371,9 +372,9 @@ public class LaunchOptionsDialog extends TitleAreaDialog {
 		data.readPersistedData();
 		String current = data.getInitialDefault();
 		String[] workspaces = data.getRecentWorkspaces();
-		for (int i = 0; i < workspaces.length; i++) {
-			if (workspaces[i] != null && !workspaces[i].equals(current)) {
-				workspaceCombo.add(workspaces[i]);
+		for (String element : workspaces) {
+			if (element != null && !element.equals(current)) {
+				workspaceCombo.add(element);
 			}
 		}
 		workspaceCombo.select(0);

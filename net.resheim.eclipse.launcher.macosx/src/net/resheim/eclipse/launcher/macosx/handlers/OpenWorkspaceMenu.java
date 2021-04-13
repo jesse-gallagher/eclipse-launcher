@@ -149,7 +149,7 @@ public class OpenWorkspaceMenu extends ExtensionContributionFactory {
 	 *            label for the workspace
 	 * @param workspace
 	 *            path to the workspace
-	 * @return
+	 * @return the created open command
 	 */
 	public CommandContributionItem createOpenCommand(IServiceLocator serviceLocator, String label, String workspace) {
 		CommandContributionItemParameter p = new CommandContributionItemParameter(serviceLocator, "", //$NON-NLS-1$

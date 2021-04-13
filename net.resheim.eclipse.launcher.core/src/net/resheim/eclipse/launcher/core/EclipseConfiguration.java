@@ -39,6 +39,7 @@ public class EclipseConfiguration {
 	 * @param in
 	 *            the *.ini file input stream
 	 * @throws IOException
+	 *             if there is an exception reading from the stream
 	 */
 	public EclipseConfiguration(InputStream in) throws IOException {
 		readVmArgs(in);
@@ -49,9 +50,8 @@ public class EclipseConfiguration {
 	 * configuration file. Duplicates are removed.
 	 *
 	 * @return a list of -vm arguments
-	 * @throws IOException
 	 */
-	public Set<String> getVmArgs() throws IOException {
+	public Set<String> getVmArgs() {
 		return vmargs;
 	}
 

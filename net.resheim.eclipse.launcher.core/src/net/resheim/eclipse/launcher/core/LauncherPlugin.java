@@ -174,6 +174,7 @@ public class LauncherPlugin extends AbstractUIPlugin {
 	}
 
 	/**
+	 * @return the active {@link BundleContext}
 	 * @since 2.0
 	 */
 	public static BundleContext getContext() {
@@ -192,14 +193,13 @@ public class LauncherPlugin extends AbstractUIPlugin {
 	/**
 	 * Launches a new Eclipse instance.
 	 *
-	 * @param workspace
-	 *            path to the workspace
 	 * @param application
 	 *            the eclipse application executable
 	 * @param args
 	 *            command line arguments
 	 * @return a status code
 	 * @throws LaunchException
+	 *             if there is a problem launching the application
 	 * @since 2.0
 	 */
 	public IStatus doLaunch(final File application, List<String> args) throws LaunchException {
@@ -273,6 +273,7 @@ public class LauncherPlugin extends AbstractUIPlugin {
 	 * Gathers and returns a list of all Java Runtime Environments found on the
 	 * host. If none are found, the list will be empty.
 	 *
+	 * @return a {@link List} of Java environments
 	 * @since 2.0
 	 */
 	public List<JRE> getJavaRuntimeEnvironments() {
