@@ -7,7 +7,7 @@
       plugin="net.resheim.eclipse.launcher.core"
       os="macosx"
       ws="cocoa"
-      arch="x86_64">
+      arch="x86_64,arm64">
 
    <description>
       %description
