@@ -4,12 +4,15 @@
   <locations>
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.11.1200.v20210405-1219"/>
-      <unit id="org.eclipse.sdk.feature.group" version="4.20.0.v20210407-2205"/>
-      <unit id="org.eclipse.pde.core" version="3.14.300.v20210324-1437"/>
+      <unit id="org.eclipse.sdk.feature.group" version="4.20.0.v20210411-1800"/>
+      <unit id="org.eclipse.pde.core" version="3.14.300.v20210410-1248"/>
       <unit id="org.eclipse.emf.ecore" version="2.24.0.v20210405-0628"/>
       <unit id="org.eclipse.emf.ecore.xmi" version="2.16.0.v20190528-0725"/>
       <unit id="org.eclipse.emf.ecore.change" version="2.14.0.v20190528-0725"/>
       <unit id="org.eclipse.emf.common" version="2.22.0.v20210319-0732"/>
+      <repository location="https://download.eclipse.org/eclipse/updates/4.20-I-builds/I20210411-1800/"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
       <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
       <repository location="http://download.eclipse.org/staging/2021-06/"/>
